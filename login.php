@@ -16,6 +16,10 @@ session_start();
                 echo $_SESSION['msg'];
                 unset($_SESSION['msg']);
             }
+            if (isset($_SESSION['msgCadastro'])) {
+                echo $_SESSION['msgCadastro'];
+                unset($_SESSION['msgCadastro']);
+            }
         ?>
         <form method="POST" action="valida.php">
             <label>E-mail</label>
@@ -27,6 +31,9 @@ session_start();
             <br><br>
 
             <button type="submit" name='btnLogin' value='OK'>OK</button>
+
+            <h4>Você ainda não possui um aconta?</h4>
+            <a href="cadastrar.php">Clique aqui</a> para criar
         </form>
     </body>
 </html>

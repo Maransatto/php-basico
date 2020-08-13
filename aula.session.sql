@@ -14,3 +14,5 @@ INSERT INTO usuarios (
 SELECT * FROM usuarios;
 
 SELECT id_usuario, nome, email, senha FROM usuarios WHERE email = 'fernando.maransatto@gmail.com';
+
+truncate table usuarios;

@@ -32,7 +32,7 @@ session_start();
 
             <button type="submit" name='btnLogin' value='OK'>OK</button>
 
-            <h4>Você ainda não possui um aconta?</h4>
+            <h4>Você ainda não possui uma conta?</h4>
             <a href="cadastrar.php">Clique aqui</a> para criar
         </form>
     </body>

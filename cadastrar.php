@@ -21,7 +21,7 @@ if ($btnCadastro) {
     $result = @mysqli_query($conn, $query) or die ('Erro ao cadastrar usuário');
 
     if (mysqli_insert_id($conn)) {
-        $_SESSION['msgCadastro'] = 'Usuário cadastrado com sucesso';
+        $_SESSION['msgLogin'] = 'Usuário cadastrado com sucesso';
         header('Location: login.php');
     } else {
         $_SESSION['msg'] = 'Erro ao cadastrar usuário';
